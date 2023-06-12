@@ -43,48 +43,48 @@ const Navbar = () => {
 	};
 
 	return (
-		<IconContext.Provider value={{ color: '#000000' }}>
+		<IconContext.Provider value={{ color: '#1a1717' }}>
 			<Nav>
 				<NavbarContainer>
 					<NavLogo to="/">
 						Plant
 					</NavLogo>
 					<MobileIcon onClick={handleClick}>
-						{show ? <FaTimes /> : <CgMenuRight />}
+						{show ? <FaTimes style={{color: 'white', marginTop:'5px'}}/> : <CgMenuRight />}
 					</MobileIcon>
 					<NavMenu show={show}>
 						<NavItem >
-							<NavLinks onClick={() => closeMobileMenu()}>
+							<NavLinks onClick={() => closeMobileMenu()} className='changecolor'>
 								Home
 							</NavLinks>
 						</NavItem>
 						<NavItem >
-							<NavLinks onClick={() => closeMobileMenu()}>
+							<NavLinks onClick={() => closeMobileMenu()} className='changecolor'>
 								Services
 							</NavLinks>
 						</NavItem>
 						<NavItem >
-							<NavLinks onClick={() => closeMobileMenu()}>
+							<NavLinks onClick={() => closeMobileMenu()} className='changecolor'>
 								About Us
 							</NavLinks>
 						</NavItem>
 						<NavItem >
-							<NavLinks onClick={() => closeMobileMenu()}>
+							<NavLinks onClick={() => closeMobileMenu()} className='changecolor'>
 								Blog
 							</NavLinks>
 						</NavItem>
 						<NavItem >
-							<NavLinks onClick={() => closeMobileMenu()}>
+							<NavLinks onClick={() => closeMobileMenu()} className='changecolor'>
 								Contact
 							</NavLinks>
 						</NavItem>
 						<NavItemm >
-							<NavLinks onClick={() => closeMobileMenu()}>
+							<NavLinks onClick={() => closeMobileMenu()} className='changecolor'>
 								Login
 							</NavLinks>
 						</NavItemm>
 						<NavItem >
-							<button onClick={() => closeMobileMenu()}>
+							<button onClick={() => closeMobileMenu()} className='buttonn'>
 								Sign up
 							</button>
 						</NavItem>

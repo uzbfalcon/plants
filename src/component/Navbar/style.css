@@ -46,6 +46,19 @@ ol {
 .none {
   text-decoration: none;
   color: rgba(26, 26, 26, 1);
+
+  
+  
+}
+@media screen and (max-width: 1000px) {
+  .none {
+    
+  }
+} 
+@media screen and (max-width: 568px) {
+  .none {
+    color: white;
+  }
 }
 div {
   text-decoration: none;

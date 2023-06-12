@@ -11,9 +11,12 @@ export const Container = styled.div`
 	@media screen and (max-width: 1000px) {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(460px,1fr));
+        justify-content: center;
 
     }
     @media screen and (max-width: 568px) {
+        justify-content: center;
+        max-width: 360px;
         
     }
 `
@@ -21,6 +24,20 @@ export const Texts = styled.div`
     display: flex;
     flex-direction: column;
     margin-right: 62px;
+
+
+    @media screen and (max-width: 1000px) {
+            max-width:800px;
+         max-width: fit-content ;
+         margin-left: 120px;
+        }
+
+    @media screen and (max-width: 568px) {
+        max-width:350px;
+        position: relative;
+        right: 70px;
+        
+        }
 
     p:nth-child(-n + 3) {
         width: 504px;
@@ -31,6 +48,17 @@ export const Texts = styled.div`
         font-size: 16px;
         /* line-height: 160%; */
         color: #4A4A4A;
+
+        @media screen and (max-width: 1000px) {
+                font-size: 1rem;
+                max-width:400px;
+        }
+
+    @media screen and (max-width: 568px) {
+        font-size: 1rem;
+        max-width:400px;
+        
+        }
     }
 
     p {
@@ -42,6 +70,18 @@ export const Texts = styled.div`
         font-size: 18px;
         margin-bottom: 65px;
         color: #4A4A4A;
+
+        @media screen and (max-width: 1000px) {
+        max-width:400px;
+                font-size: 1rem;
+        }
+
+    @media screen and (max-width: 568px) {
+        max-width:380px;
+        font-size: 1rem;
+        margin-bottom: 110px;
+        
+        }
     }
 
     span {
@@ -55,14 +95,14 @@ export const Texts = styled.div`
         color: #066F14;
 
     @media screen and (max-width: 1000px) {
-        
-    }
+        max-width:400px;
+            font-size: 1rem;
+        }
 
     @media screen and (max-width: 568px) {
+        max-width:400px;
+        font-size: 1rem;
         
-    /* margin-top: 400px; */
-
-            
         }
     }
     h2 {
@@ -74,6 +114,17 @@ export const Texts = styled.div`
         font-size: 40px;
         margin-bottom:24px ;
         color: #1A1A1A;
+
+        @media screen and (max-width: 1000px) {
+        max-width:400px;
+            font-size: 1rem;
+        }
+
+    @media screen and (max-width: 568px) {
+        max-width:400px;
+        font-size: 1rem;
+        
+        }
     }
 
     button {
@@ -91,18 +142,19 @@ export const Texts = styled.div`
 
 export const Img = styled.div`
     img {
-
         height: 480px;
         width: 516px;
+        @media screen and (max-width: 1000px) {
+            max-width: 700xp;
+    
+        }
+        @media screen and (max-width: 568px) {
+            max-width: 380px;
+            margin-top: 450px;
+            margin-left: 50px;
+        }
     }
 
-    @media screen and (max-width: 1000px) {
-        max-width: fit-content;
-
-    }
-    @media screen and (max-width: 568px) {
-        max-width: fit-content;
-    }
 
     
     `

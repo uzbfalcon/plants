@@ -55,6 +55,17 @@ export const Title = styled.div`
     text-align: left;
     margin: 20px auto;
 
+
+    @media screen and (max-width: 1000px) {
+            text-align: center;
+    }
+    @media screen and (max-width: 568px) {
+        text-align: center;
+
+    }
+
+
+
 `
 export const Subtitle = styled.div`
     max-width: 544px;
@@ -69,7 +80,8 @@ export const Subtitle = styled.div`
     margin: auto;
 
     @media screen and (max-width: 1000px) {
-        
+        align-items: center;
+        text-align: center;
 
     }
 
@@ -77,9 +89,10 @@ export const Subtitle = styled.div`
 
     @media screen and (max-width: 568px) {
             display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(330px,1fr));
-
-            
+            grid-template-columns: repeat(auto-fit, minmax(330px,1fr));
+            max-width: 380px;
+            position: relative;
+            right: 50px;
         }
 
 `

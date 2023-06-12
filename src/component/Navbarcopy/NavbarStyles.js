@@ -35,11 +35,14 @@ export const NavLogo = styled(Link)`
 	font-size: 2rem;
 	display: flex;
 	align-items: center;
-	z-index: 50;
+	/* z-index: 50; */
 	color: black;
 	font-family:'DM Sans';
 	margin-left: 14px;
 	font-weight: 700;
+	/* @media screen and (max-width: 960px) {
+		color: white;
+	} */
 `;
 
 export const NavIcon = styled.img`
@@ -62,6 +65,12 @@ export const MobileIcon = styled.div`
 		transform: translate(-100%, 60%);
 		font-size: 1.8rem;
 		cursor: pointer;
+	}
+	.cancel {
+		color: white;
+	@media screen and (max-width: 960px) {
+		counter-reset: white;
+	}
 	}
 `;
 
@@ -96,7 +105,11 @@ export const NavMenu = styled.ul`
 		border: 1px solid green;
 		background: rgba(6, 111, 20, 1);
 		color: white;
-;
+
+		@media screen and (max-width: 960px) {
+		position: relative;
+		left: 38%;
+	}
 
 	}
 `;
@@ -108,9 +121,23 @@ export const NavItem = styled.li`
 	align-items: center;
 	@media screen and (max-width: 960px) {
 		width: 100%;
+		
 		&:hover {
 			border: none;
 		}
+	}
+
+	.changecolor {
+	@media screen and (max-width: 960px) {
+		color: white;
+		text-align: center;
+	}
+	.buttonn {
+	@media screen and (max-width: 960px) {
+		position: relative;
+		left: 50px;
+	}
+	}
 	}
 `;
 export const NavItemm = styled.li`
@@ -123,6 +150,14 @@ export const NavItemm = styled.li`
 		&:hover {
 			border: none;
 		}
+	}
+
+	.changecolor {
+	@media screen and (max-width: 960px) {
+		color: white;
+		position: relative;
+		right: 9%;
+	}
 	}
 `;
 
