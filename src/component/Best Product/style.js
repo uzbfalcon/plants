@@ -93,7 +93,7 @@ export const Img = styled.div`
         flex-direction: column; */
         background-color: #EAF2E5;
         height: 283px;
-        width: 270px;
+        max-width: 270px;
         padding: 10px 89px 29px 32px;
     }
     .hover:hover {
@@ -111,7 +111,15 @@ export const Img = styled.div`
         height: 85px;
         width: 154px;
     }
-
+	@media screen and (max-width: 1100px) {
+        display: grid;
+        justify-content: center;
+		grid-template-columns: repeat(2, 1fr);
+		grid-row-gap: 3rem;
+	}
+	@media screen and (max-width: 568px) {
+		grid-template-columns: repeat(1, 1fr);
+	}
     
     `
 

@@ -13,6 +13,16 @@ const Container = styled.div`
   width: 100%;
   margin-top: 96px;
   padding: 48px 70px;
+
+  @media screen and (max-width: 1000px) {
+       flex-direction: column;
+
+    }
+    @media screen and (max-width: 568px) {
+     flex-direction: column;
+     margin-top: 250px;
+     /* text-align: center;   */
+    }
 `;
 
 const Content = styled.div`
@@ -20,6 +30,17 @@ const Content = styled.div`
   flex-direction: column;
   max-width: 235px;
   width: 100%;
+
+  @media screen and (max-width: 1000px) {
+      text-align: center;
+      margin: auto;
+
+    }
+    @media screen and (max-width: 568px) {
+     
+     text-align: center;  
+     margin: auto;
+    }
   `;
 
 Content.Title = styled.div`

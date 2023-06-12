@@ -27,6 +27,12 @@ export const Texts = styled.div`
         font-weight: 700;
         font-size: 36px;
         color: #1A1A1A;
+        @media screen and (max-width: 568px) {
+            font-size: 1.5rem;
+            max-width: fit-content;
+            text-align: center;
+
+        }
     }
 
     span {
@@ -41,7 +47,18 @@ export const Texts = styled.div`
         display: flex;
         align-items: center;
         margin-top: 37px;
+        @media screen and (max-width: 568px) {
+            font-size: 1rem;
+            max-width: fit-content;
+            text-align: center;
+            
+        }
     }
+    @media screen and (max-width: 568px) {
+            
+            
+        }
+
 `
 
 export const Animation = styled.div`
@@ -57,5 +74,10 @@ export const Animation = styled.div`
     img {
         border-radius: 5px;
     }
+
+    @media screen and (max-width: 568px) {
+            flex-direction: column;
+            
+        }
 `
 

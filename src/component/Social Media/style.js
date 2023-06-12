@@ -57,7 +57,7 @@ export const Title = styled.div`
 
 `
 export const Subtitle = styled.div`
-    width: 544px;
+    max-width: 544px;
     height: 52px;
     font-family: 'DM Sans';
     font-style: normal;
@@ -67,6 +67,21 @@ export const Subtitle = styled.div`
     text-align: center;
     color: #4A4A4A;
     margin: auto;
+
+    @media screen and (max-width: 1000px) {
+        
+
+    }
+
+
+
+    @media screen and (max-width: 568px) {
+            display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(330px,1fr));
+
+            
+        }
+
 `
 export const Img = styled.div`
     display: flex;
@@ -82,6 +97,20 @@ export const Img = styled.div`
         width: 270px;
         padding: 10px 89px 29px 32px;
     } */
+    @media screen and (max-width: 1000px) {
+        display    :grid ;
+          grid-template-columns: repeat(auto-fit, minmax(330px,1fr));
+
+    }
+
+
+
+    @media screen and (max-width: 568px) {
+            display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(330px,1fr));
+
+            
+        }
 
     .pictop {
         height: 241px;

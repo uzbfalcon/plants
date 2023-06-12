@@ -11,13 +11,13 @@ export const Footer = () => {
       <Content>
         <Content.Title >Plant</Content.Title>
         <Content.Item>
-        Lorem ipsum dolor sit amet, consectetur adi piscing elit. Diam nibh posuere duis eu non sit integer at placerat amet.
-          </Content.Item>
-          <Icon>
-            <img src={facebook} alt="facebook" />
-            <img src={twitter} alt="facebook" />
-            <img src={instagram} alt="facebook" />
-          </Icon>
+          Lorem ipsum dolor sit amet, consectetur adi piscing elit. Diam nibh posuere duis eu non sit integer at placerat amet.
+        </Content.Item>
+        <Icon>
+          <img src={facebook} alt="facebook" />
+          <img src={twitter} alt="facebook" />
+          <img src={instagram} alt="facebook" />
+        </Icon>
       </Content>
       <Content>
         <Content.Title>Navigation</Content.Title>

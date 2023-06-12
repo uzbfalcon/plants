@@ -4,10 +4,11 @@ export const Container = styled.div`
     display: flex;
     /* background-color: aqua; */
     padding: 0px 90px;
-    margin-top: 60px;
+    margin-top: 140px;
     justify-content: center;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 1000px) {
         flex-direction: column;
+        padding: 0 40px;
     }
 
 `
@@ -28,6 +29,13 @@ export const Texts = styled.div`
         height: 55px;
         background: #066F14;
         border-radius: 4px;
+        @media screen and (max-width: 1100px) {
+            margin-top: 69px;
+	    }
+	    @media screen and (max-width: 568px) {
+            margin-top: 69px;
+
+     }
     }
     button {
         background: #066F14;
@@ -58,11 +66,18 @@ export const Texts = styled.div`
    }
 `
 export const Title = styled.div`
-    font-size: 38px;
+    /* font-size: 38px; */
     font-family: 'DM Sans';
-    font-size: 66px;
+    font-size: 4rem;
     font-weight: 700;
     text-align: left;
+
+    @media screen and (max-width: 1100px) {
+       padding: 0;
+	}
+	@media screen and (max-width: 568px) {
+        font-size: 3rem;
+    }
 
 `
 export const Subtitle = styled.div`
@@ -78,11 +93,21 @@ export const Subtitle = styled.div`
     order: 0;
     flex-grow: 0;
     margin-top: 24px;
+    @media screen and (max-width: 1100px) {
+       padding: 0;
+	}
+	@media screen and (max-width: 568px) {
+        font-size: 1rem;
+        max-width: 339px;
+    }
 `
 export const Img = styled.img`
     height: 719px;
     width: 557px;
 
+    @media screen and (max-width: 568px) {
+        width: auto;
+    }
 
 `
 export const Animation = styled.div`
@@ -106,6 +131,20 @@ export const Animation = styled.div`
         flex: none;
         order: 1;
         flex-grow: 0;
+    }
+
+    .animationnumber {
+        @media screen and (max-width: 568px) {
+            max-width: 50px;
+    }
+    }
+
+   
+	@media screen and (max-width: 568px) {
+        display: grid;
+        /* gap: 10px; */
+        margin:30px auto ;
+        grid-template-columns: repeat(2,1fr);
     }
 `
 

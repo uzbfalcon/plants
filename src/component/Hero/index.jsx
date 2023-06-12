@@ -16,18 +16,18 @@ export const Hero = () => {
                 <Subtitle>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, tempor, accumsan sit amet nunc cursus. Nec tristique at in erat lectus mas sa diam. Lectus elit, nulla elementum fringilla at.
                 </Subtitle>
-                <Button>Learn More</Button>
+                <Button className="button">Learn More</Button>
                 <Animation>
                     <div>
-                        <CountUp start={0} end={2000} duration={7} separator=" " suffix="+" />
+                        <CountUp start={0} end={2000} duration={7}  suffix="+" className="animationnumber"/>
                         <p>Delivery</p>
                     </div>
                     <div>
-                        <CountUp start={0} end={1200} duration={7} separator=" " suffix="+" />
+                        <CountUp start={0} end={1200} duration={7}  suffix="+" className="animationnumber"/>
                         <p>Customers</p>
                     </div>
                     <div>
-                        <CountUp start={0} end={1000} duration={7} separator=" " suffix="+" />
+                        <CountUp start={0} end={1000} duration={7}  suffix="+" className="animationnumber"/>
                         <p>Product</p>
                     </div>
                 </Animation>

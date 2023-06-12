@@ -8,8 +8,13 @@ export const Container = styled.div`
     gap: 70px;
 
 
-	@media screen and (max-width: 768px) {
-        flex-direction: column-reverse;
+	@media screen and (max-width: 1000px) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(460px,1fr));
+
+    }
+    @media screen and (max-width: 568px) {
+        
     }
 `
 export const Texts = styled.div`
@@ -41,15 +46,24 @@ export const Texts = styled.div`
 
     span {
         width: 79px;
-height: 23px;
+        height: 23px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: #066F14;
 
-font-family: 'DM Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 23px;
+    @media screen and (max-width: 1000px) {
+        
+    }
 
-color: #066F14;
+    @media screen and (max-width: 568px) {
+        
+    /* margin-top: 400px; */
+
+            
+        }
     }
     h2 {
         width: 490px;
@@ -81,5 +95,15 @@ export const Img = styled.div`
         height: 480px;
         width: 516px;
     }
+
+    @media screen and (max-width: 1000px) {
+        max-width: fit-content;
+
+    }
+    @media screen and (max-width: 568px) {
+        max-width: fit-content;
+    }
+
+    
     `
 
