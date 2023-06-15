@@ -74,9 +74,11 @@ export const Title = styled.div`
 
     @media screen and (max-width: 1100px) {
        padding: 0;
+
 	}
 	@media screen and (max-width: 568px) {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        min-width: 340px;
     }
 
 `
@@ -98,7 +100,7 @@ export const Subtitle = styled.div`
 	}
 	@media screen and (max-width: 568px) {
         font-size: 1rem;
-        max-width: 339px;
+        max-width: 320px;
     }
 `
 export const Img = styled.img`
@@ -107,6 +109,7 @@ export const Img = styled.img`
 
     @media screen and (max-width: 568px) {
         width: auto;
+        height: auto;
     }
 
 `

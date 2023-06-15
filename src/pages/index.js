@@ -7,7 +7,7 @@ import './style.js'
 import { Wrapper } from "./style.js";
 import { Product } from "../component/Best Product";
 import { Socialedia } from "../component/Social Media";
-import Footer from "../Footer";
+import Footer from "../component/Footer";
 
 export const Home = () => {
     return (

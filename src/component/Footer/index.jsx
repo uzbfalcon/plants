@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Content, Icon } from './style';
-import facebook from '../assets/Frame 148.png'
-import twitter from '../assets/Frame 149.png'
-import instagram from '../assets/Frame 150.png'
+import facebook from '../../assets/Frame 148.png'
+import twitter from '../../assets/Frame 149.png'
+import instagram from '../../assets/Frame 150.png'
 
 
 export const Footer = () => {

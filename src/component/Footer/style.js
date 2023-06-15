@@ -34,12 +34,13 @@ const Content = styled.div`
   @media screen and (max-width: 1000px) {
       text-align: center;
       margin: auto;
+      align-items:center;
 
     }
     @media screen and (max-width: 568px) {
      
      text-align: center;  
-     margin: auto;
+     align-items:center;
     }
   `;
 
@@ -79,6 +80,10 @@ const Icon = styled.div`
   img:hover {
     transform: scale(1.1);
   }
+
+    @media screen and (max-width: 568px) {
+      margin-bottom: 40px;
+    }
 `
 
 
